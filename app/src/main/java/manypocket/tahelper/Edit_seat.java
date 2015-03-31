@@ -1,9 +1,11 @@
 package manypocket.tahelper;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class Edit_seat extends ActionBarActivity {
@@ -34,5 +36,10 @@ public class Edit_seat extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void gotoEditProfile(View view) {
+        Intent intent = new Intent(getApplicationContext(),editProfile.class);
+        startActivity(intent);
     }
 }
