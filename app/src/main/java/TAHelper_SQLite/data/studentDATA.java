@@ -14,7 +14,7 @@ public class studentDATA {
     private SQLiteDatabase database;
 
     private static final String STUDENT_TABLE = "student_Table";
-    private static final String COLUMN_ID = "id";
+    private static final String COLUMN_ID = "_id";
     private static final String COLUMN_STUDENTID = "StudentID";
     private static final String COLUMN_NAME = "Name";
     private static final String COLUMN_SURNAME = "Surname";

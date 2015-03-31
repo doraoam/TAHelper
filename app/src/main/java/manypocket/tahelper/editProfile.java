@@ -4,11 +4,13 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
+import TAHelper_SQLite.data.studentDATA;
 
 public class editProfile extends ActionBarActivity {
 
@@ -24,11 +26,14 @@ public class editProfile extends ActionBarActivity {
     private String strMajor;
     private String strFaculty;
 
+    private studentDATA feedData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
         initWidget();
+        feedData = new studentDATA(this);
     }
 
     private void initWidget() {
@@ -38,7 +43,6 @@ public class editProfile extends ActionBarActivity {
         edtMajor = (EditText)findViewById(R.id.editText_major);
         edtFaculty = (EditText)findViewById(R.id.editText_faculty);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -85,7 +89,12 @@ public class editProfile extends ActionBarActivity {
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
+                        addDataToSQLite();
+                    }
+
+                    protected void addDataToSQLite() {
+                        long insertID = feedData.addNewStudent(strStudentID, strName, strSurname, strMajor, strFaculty);
+                        Log.d("feedDATA", "feed id = " + insertID);
                     }
                 });
 
