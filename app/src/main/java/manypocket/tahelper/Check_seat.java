@@ -1,19 +1,27 @@
 package manypocket.tahelper;
 
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class Check_seat extends ActionBarActivity {
+
+    private static int totalStudent;
 
     @Override
      protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_seat);
+        totalStudent = 0;
     }
 
     @Override
@@ -38,4 +46,26 @@ public class Check_seat extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void countToTalStudent(View view) {
+
+        // create to check id of button
+        Resources res = view.getResources();
+        int id = view.getId();
+        String idString = res.getResourceEntryName(id);
+
+        // translate a string into resource type
+        int resID = getResources().getIdentifier(idString,"id", getPackageName());
+
+        // convert int into ImageButton and make it can click only one time
+        ImageButton imageButton = (ImageButton)findViewById(resID);
+        imageButton.setClickable(false);
+
+        totalStudent++;
+    }
+
+    public void showToTalStudent(View view) {
+        AlertDialog.Builder alertTotalStudent = new AlertDialog.Builder(this);
+        alertTotalStudent.setMessage("Total student : " + totalStudent);
+        alertTotalStudent.show();
+    }
 }

@@ -42,66 +42,77 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton1"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton2"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton3"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton4"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton5"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton6"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton7"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton8"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton9"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton10"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton11"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
         </LinearLayout>
     </ScrollView>
@@ -130,66 +141,77 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton12"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton13"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton14"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton15"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton16"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton17"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton18"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton19"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton20"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton21"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton22"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
         </LinearLayout>
     </ScrollView>
@@ -218,66 +240,77 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton23"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton24"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton25"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton26"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton27"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton28"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton29"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton30"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton31"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton32"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton33"
+                android:onClick="countToTalStudent"
                 android:src="@drawable/sofa"/>
         </LinearLayout>
     </ScrollView>
@@ -287,6 +320,7 @@
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/button2"
+        android:onClick="showToTalStudent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
