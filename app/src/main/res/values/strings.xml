@@ -15,4 +15,5 @@
     <string name="title_activity_main_activity2">MainActivity2Activity</string>
     <string name="title_activity_home_setting">homeSetting</string>
     <string name="title_activity_edit_seat">Edit_seat</string>
+    <string name="title_activity_edit_profile">editProfile</string>
 </resources>

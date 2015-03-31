@@ -54,6 +54,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="manypocket.tahelper.homeSetting" />
         </activity>
+        <activity
+            android:name=".editProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName=".Edit_seat" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="manypocket.tahelper.Edit_seat" />
+        </activity>
     </application>
 
 </manifest>
