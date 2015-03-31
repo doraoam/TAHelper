@@ -33,7 +33,7 @@ public class editProfile extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
         initWidget();
-        feedData = new studentDATA(this);
+        feedData = new studentDATA(getApplicationContext());
     }
 
     private void initWidget() {
@@ -92,10 +92,6 @@ public class editProfile extends ActionBarActivity {
                         addDataToSQLite();
                     }
 
-                    protected void addDataToSQLite() {
-                        long insertID = feedData.addNewStudent(strStudentID, strName, strSurname, strMajor, strFaculty);
-                        Log.d("feedDATA", "feed id = " + insertID);
-                    }
                 });
 
         addStudentAlert.setNegativeButton("Cancel",
@@ -108,5 +104,10 @@ public class editProfile extends ActionBarActivity {
                 });
 
         addStudentAlert.show();
+    }
+
+    protected void addDataToSQLite() {
+        long insertID = feedData.addNewStudent(strStudentID, strName, strSurname, strMajor, strFaculty);
+        Log.d("feedDATA", "feed id = " + insertID);
     }
 }

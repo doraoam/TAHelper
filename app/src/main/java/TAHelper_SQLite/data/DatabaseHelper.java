@@ -13,7 +13,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "studentDB";
     private static final int DATABASE_VERSION = 1;
 
-    private static final String DATABASE_CREATE = "create table student_Table ( _id integer primary key. "
+    private static final String DATABASE_CREATE = "create table student_Table ( _id integer primary key, "
             + " StudentID text not null ,Name text not null, Surname text not null, Major text not null, Faculty text not null );";
 
     public DatabaseHelper(Context context){
