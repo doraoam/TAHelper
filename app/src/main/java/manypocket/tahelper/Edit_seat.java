@@ -1,6 +1,7 @@
 package manypocket.tahelper;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,8 @@ import android.view.View;
 
 
 public class Edit_seat extends ActionBarActivity {
+
+    public final static String STRSEATNUMBER = ".TAHelper.SEATNUMBER";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,11 @@ public class Edit_seat extends ActionBarActivity {
 
     public void gotoEditProfile(View view) {
         Intent intent = new Intent(getApplicationContext(),editProfile.class);
+        Resources res = view.getResources();
+        int id = view.getId();
+        String idString = res.getResourceEntryName(id);
+        String seatNumber = idString.substring(11);
+        intent.putExtra(STRSEATNUMBER,seatNumber);
         startActivity(intent);
     }
 }

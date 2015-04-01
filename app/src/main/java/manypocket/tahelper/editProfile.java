@@ -2,6 +2,8 @@ package manypocket.tahelper;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,6 +22,7 @@ public class editProfile extends ActionBarActivity {
     private EditText edtMajor;
     private EditText edtFaculty;
 
+    private String strSeatNumber;
     private String strStudentID;
     private String strName;
     private String strSurname;
@@ -31,8 +34,18 @@ public class editProfile extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // get SeatNumber from Edit_seat class
+        Intent intent = getIntent();
+        strSeatNumber = intent.getStringExtra(Edit_seat.STRSEATNUMBER);
+
+        // Set view
         setContentView(R.layout.activity_edit_profile);
+
+        // get String from EditText field
         initWidget();
+
+        // establish database
         feedData = new studentDATA(getApplicationContext());
     }
 
@@ -67,6 +80,7 @@ public class editProfile extends ActionBarActivity {
     }
 
     public void clickSaveNewStudent(View view) {
+
         strStudentID = edtStudentID.getText().toString();
         strName = edtName.getText().toString();
         strSurname = edtSurname.getText().toString();
@@ -80,7 +94,7 @@ public class editProfile extends ActionBarActivity {
         AlertDialog.Builder addStudentAlert = new AlertDialog.Builder(this);
         addStudentAlert.setIcon(R.drawable.ic_action_warning);
         addStudentAlert.setTitle("Add New Student to Database");
-        addStudentAlert.setMessage("StudentID : " + strStudentID + "\n" + "Name : "
+        addStudentAlert.setMessage("SeatNumber : " + strSeatNumber + "\n" + "StudentID : " + strStudentID + "\n" + "Name : "
             + strName + "\n" + "Surname : " + strSurname + "\n" + "Major : "
                 + strMajor + "\n" + "Faculty : " + strFaculty);
 
@@ -107,7 +121,7 @@ public class editProfile extends ActionBarActivity {
     }
 
     protected void addDataToSQLite() {
-        long insertID = feedData.addNewStudent(strStudentID, strName, strSurname, strMajor, strFaculty);
+        long insertID = feedData.addNewStudent(strSeatNumber,strStudentID, strName, strSurname, strMajor, strFaculty);
         Log.d("feedDATA", "feed id = " + insertID);
     }
 }
